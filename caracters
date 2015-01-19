@@ -1,0 +1,23 @@
+def entree():
+	print ("Recherche le nombre d'un caractere dans un texte.\n")
+	ch =input("Ecrivez un texte :")
+	return ch
+	
+def recherche(ch):
+	t=0
+	for i in range(0,len(ch)):
+		if "e"==ch[i]:
+			t=t+1
+	return t
+
+def pourImpression(t):
+	if t:
+		print("le texte contient le caractere 'e' "+str(t)+" fois.")
+	else:
+		print("le texte ne contient pas le caractere 'e'.")
+
+print ("   ---> Debut du programme.\n")
+texte=entree()
+test=recherche(texte)
+pourImpression(test)
+print ("\n   ---> Fin du programme.")
